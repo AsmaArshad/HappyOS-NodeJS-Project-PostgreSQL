@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/login-style.css">
+    <title>Forget Password</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-md-12 col-sm-12 col-12">
+
+                    {{#if msg}}
+                    <div class="alert alert-success mt-2" role="alert">
+                        {{msg}}
+                    </div>
+                    {{/if}}
+
+                    {{#if mail_error}}
+                    <div class="alert alert-danger mt-2" role="alert">
+                        {{mail_error}}
+                    </div>
+                    {{/if}}
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-8 col-10  text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-6 text-center login-img">
+                                    <img src="/images/logo.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="row justify-content-center align-content-center mt-4 bg-white pt-4 pb-4 white-cont">
+                                <div class="col-lg-11">
+                                    <div class="row">
+                                        <form method="post">
+                                            <div class="col-12 login-card mt-2 mb-2">
+                                                <h4>{{title}}</h4>
+                                                <br>
+                                                <input type="email" placeholder="Your Email" name="Email"
+                                                    value="{{Email}}">
+                                                <br>
+                                                <br>
+                                                <input type="submit" class="login-btn mt-5" value="Proceed">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

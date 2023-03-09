@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/signup-style.css">
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="sign-up">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-md-12 col-sm-12 col-12">
+
+                    {{#if msg}}
+                    <div class="alert alert-success mt-3" role="alert">
+                        {{msg}}
+                    </div>
+                    {{/if}}
+
+                    {{#if errorMsg}}
+                    <div class="alert alert-danger mt-3" role="alert">
+                        {{errorMsg}}
+                    </div>
+                    {{/if}}
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-8 col-10  text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-6 text-center signup-img">
+                                    <img src="/images/logo.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="row justify-content-center align-content-center mt-2 bg-white pt-4 pb-4 white-cont">
+                                <div class="col-lg-11">
+                                    <div class="row">
+                                        <form method="post">
+                                            <div class="col-12 signup-card">
+                                                <h4>Signup to your account</h4>
+                                                <input type="email" placeholder="Email" name="Email" required>
+
+                                                <p class="policy-p">By signing up you confirm that you've read <br> and
+                                                    accept our
+                                                    <a href="#" class="privacy">User Notice</a>
+                                                    and
+                                                    <a href="#" class="privacy">Privacy Policy</a>
+                                                </p>
+
+                                                <input type="submit" class="signup-btn mt-3" value="signup">
+                                                <span>Already have an account? <a href="/login"
+                                                        class="privacy">Login</a></span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

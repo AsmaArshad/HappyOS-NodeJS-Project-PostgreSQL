@@ -1,0 +1,166 @@
+body{
+    background-color: rgb(228, 225, 225);
+}
+
+.register-signup-img{
+    margin-top: 70px;
+}
+
+.white-cont{
+    margin-top: 20px !important;
+    border-radius: 20px;
+}
+
+
+.register-signup-card input{
+        width: 100%;
+        margin-top: 20px;
+        padding: 8px 16px;
+        border: 1px solid rgb(194, 193, 193);
+        border-radius: 25px;
+        font-size: 13px;
+}
+
+.btn{
+    border: 1px solid rgb(194, 193, 193);
+    color: rgb(109, 103, 103);
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.city-row{
+    width: 100px !important;
+    margin-right: 20px !important;
+}
+
+.phone-circle {
+    width: 45px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    font-size: 10px !important;
+    color: rgb(0, 183, 255);
+}
+
+.phone-circle::placeholder{
+    color: rgb(0, 183, 255);
+}
+
+.phone-circle2{
+    border-radius: 50%;
+    border: 1px solid rgb(194, 193, 193);
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    top: 14px;
+    font-size: 10px;
+    color: rgb(0, 175, 219);
+}
+
+.ttt {
+    font-size: 13px !important;
+    width: 127px !important;
+    margin-left: -12px;
+}
+
+.drop-d{
+    margin-right: 65px !important;
+}
+
+.policy{
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+}
+
+.anchor{
+    color: rgb(0, 175, 219);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.anchor:hover{
+    text-decoration: underline;
+}
+
+input[type= checkbox] {
+    width: 30px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+.white-btn {
+    width: 100px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    background-color: rgb(221 216 216);
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    color: #5a5555;
+    font-weight: 500;
+}
+
+.blue-btn{
+    width: 250px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    background-color: rgb(0, 175, 219);
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 830px) and (max-width: 909px)  {
+    .btn{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 815px)  {
+    .ttt{
+        width: 106px !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 468px)  {
+    .btn{
+        font-size: 15px;
+    }
+    .signup-heading{
+        font-size: 16px;
+    }
+    .ttt{
+        font-size: 8px !important;
+    }
+    .phone-circle2{
+        font-size: 8px !important;
+    }
+}
+
+@media only screen and (max-width: 1170px)  {
+    .rem {
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 930px)  {
+    .rem {
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 770px)  {
+    .rem {
+        right: 60px;
+    }
+}
+
+@media only screen and (max-width: 770px)  {
+    .rem {
+        right: 40px;
+    }
+}
+

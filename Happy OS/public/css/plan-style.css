@@ -1,0 +1,117 @@
+
+.button-logout{
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 18px;
+    margin-left: 470px;
+    cursor: pointer;
+    background-color: #27B5F6;
+}
+
+.button-logout:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+
+.red-area{
+    background: rgb(238, 20, 20);
+    background: linear-gradient(90deg, rgb(238, 20, 20) 0%, rgba(253,126,29,1) 46%, rgba(252,132,62,1) 79%, rgb(238, 20, 20) 94%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 30px;
+}
+
+.red-area p{
+    font-size: 16px;
+}
+
+.bold-t{
+    font-weight: 700;
+}
+
+.left-heading{
+    font-weight: 600;
+}
+
+.input-f{
+    padding: 5px 15px;
+    border-radius: 20px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(184, 182, 182);
+}
+
+.round-inp{
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(184, 182, 182);
+}
+
+.expire-input{
+    width: 117px !important;
+    border-radius: 8px;
+    border: 1px solid rgb(184, 182, 182);
+    padding: 8px 10px;
+}
+
+.card-inp{
+    border-radius: 8px;
+    border: 1px solid rgb(184, 182, 182);
+    padding: 8px 10px;
+}
+
+.aaa{
+    margin-left: 10px;
+}
+
+.credit-heading{
+    font-size: 40px !important;
+}
+
+.credit-para{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(192, 189, 189);
+}
+
+.credit-field{
+    font-size: 16px;
+    color: black;
+    margin: 0px;
+}
+
+.plan-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #03a9f4db;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+}
+
+
+.head-img{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.h5-font{
+    font-size: 22px;
+}
+
+.left-side{
+    margin-left: 40px;
+}
+
+.right-side{
+    margin-right: 70px;
+}
+

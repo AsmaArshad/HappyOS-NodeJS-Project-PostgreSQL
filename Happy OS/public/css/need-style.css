@@ -1,0 +1,247 @@
+.btn-subscription{
+    background-color:#18b4ee; 
+    padding-top:10px;
+}
+
+/* .img {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+img {
+    width: 120px;
+} */
+
+.header {
+    font-family: sans-serif;
+    color: darkgray;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    color: darkgray;
+    padding-top: 60px;
+}
+
+#abc {
+    margin-top: 50px;
+    width: 15%;
+    margin-left: 70px;
+    font-weight: 700;
+    color: lightgray;
+}
+
+#abcc {
+    margin-top: -38px;
+    width: 17%;
+    margin-left: 300px;
+    font-weight: 700;
+    color: lightgray;
+}
+
+.btn {
+    width: 25%;
+    margin-top: 150px;
+    border-radius: 40px;
+    font-size: 12px;
+    height: 40px;
+}
+
+#button {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form-select,
+.form-select:focus {
+    border: 1px solid #e2e2ea;
+    outline: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.form-select:focus {
+    border: 1px solid #18b4ee;
+}
+
+select option.stripe:nth-of-type(2n) {
+    background: #ededed;
+}
+
+.head-img{
+    margin-left: 120px;
+}
+
+.head-content{
+    margin-right: 120px;
+    color: rgb(180, 167, 167);
+}
+
+.welcome-icon{
+    position: relative;
+    right: 10px;
+    font-size: 22px;
+}
+
+.center-content{
+    color: rgb(180, 167, 167);
+}
+
+.menu {
+    padding: 10px 8px;
+    border: 1px solid rgb(180, 167, 167);
+    color: rgb(180, 167, 167);
+}
+
+.menu-2{
+    padding: 10px 14px;
+    border: 1px solid rgb(180, 167, 167);
+    color: rgb(180, 167, 167);
+}
+
+.menu-2-div{
+    position: relative;
+    left: 80px;
+}
+
+.need-button {
+    border: none;
+    border-radius: 30px;
+    background-color: #03a9f4db;
+    padding: 15px 100px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+ .head-img{
+    margin-left: 120px;
+}
+
+.head-content{
+    margin-right: 120px;
+    color: rgb(180, 167, 167);
+}
+
+.welcome-icon{
+    position: relative;
+    right: 10px;
+    font-size: 22px;
+}
+
+.wel-button {
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 22px;
+    position: relative;
+    bottom: 1px;
+}
+
+.bi-gear{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.welcome-drop{
+    border: 1px solid rgb(90, 80, 80);
+    height: 150px;
+    width: 230px;
+    position: absolute;
+    right: 126px;
+    top: 62px;
+    border-radius: 20px;
+    background-color: #03a9f4db;
+    display: none;
+    text-align: center;
+}
+
+.drop-anc{
+    width: 200px;
+    margin-right: 20px !important;
+    position: relative;
+    top: 14px;
+    right: 21px;
+    text-decoration: none;
+    color: white;
+    background-color: #03a9f400;
+    padding: 10px 70px;
+}
+
+.drop-anc:hover{
+    background-color: #0daddd;
+    color: white;
+    border-radius: 15px;
+}
+
+.drop-anc-2 {
+    margin-right: 20px !important;
+    position: relative;
+    top: 40px;
+    right: 3px;
+    text-decoration: none;
+    color: white;
+    background-color: #03a9f400;
+    padding: 10px 14px;
+}
+
+.drop-anc-2:hover{
+    background-color: #0daddd;
+    color: white;
+    border-radius: 15px;
+}
+
+.drop-anc-3 {
+    margin-right: 20px !important;
+    position: relative;
+    top: 65px;
+    right: 21px;
+    text-decoration: none;
+    color: white;
+    background-color: #03a9f400;
+    padding: 10px 70px;
+}
+
+.drop-anc-3:hover{
+    background-color: #0daddd;
+    color: white;
+    border-radius: 15px;
+}
+
+.center-content{
+    color: rgb(180, 167, 167);
+}
+
+.menu {
+    padding: 10px 8px;
+    border: 1px solid rgb(180, 167, 167);
+    color: rgb(180, 167, 167);
+}
+
+.menu-2{
+    padding: 10px 14px;
+    border: 1px solid rgb(180, 167, 167);
+    color: rgb(180, 167, 167);
+}
+
+.menu-2-div{
+    position: relative;
+    left: 80px;
+}
+
+.need-button {
+    border: none;
+    border-radius: 30px;
+    background-color: #03a9f4db;
+    padding: 15px 100px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}

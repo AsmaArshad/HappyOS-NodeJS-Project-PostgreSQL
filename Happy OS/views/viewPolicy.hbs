@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/view-policy-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/55d44e523a.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>View Policy</title>
+</head>
+
+<body class="container">
+    <div id="onlinejson"></div>
+
+    <div class="view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    {{>header}}
+                </div>
+            </div>
+
+            {{#if error}}
+            <div class="alert alert-danger mt-3" role="alert">
+                {{error}}
+            </div>
+            {{/if}}
+
+            {{#if success_msg}}
+            <div class="alert alert-success mt-3" role="alert">
+                {{success_msg}}
+            </div>
+            {{/if}}
+
+            <div class="row text-center mt-3">
+                <div class="col-12">
+                    <h2>View and Download Policies</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-5 left-div">
+                            <form method="post">
+                                <div class="row mt-3">
+                                    <div class="col-3 ml-5">
+
+                                        <select id="programs" class="menu" name="program" required>
+                                            <option value="HR Employee Mgmt">HR Employee
+                                                Mgmt</option>
+                                            <option value="Training Career Mgmt">Training
+                                                Career Mgmt</option>
+                                            <option value="Corporate Standards">Corporate
+                                                Standards</option>
+                                            <option value="Claint Rights">Claint Rights
+                                            </option>
+                                            <option value="Claint Management">Claint
+                                                Management</option>
+                                            <option value="Service Options">Service Options
+                                            </option>
+                                            <option value="Miscellaneus">Miscellaneus
+                                            </option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-5 menu-2-div ml-4">
+                                        <select id="categories" class="menu-2" name="category" required>
+                                            <option value="ACT">ACT</option>
+                                            <option value="ARMHS">ARMHS</option>
+                                            <option value="MCT">MCT</option>
+                                            <option value="CTSS">CTSS</option>
+                                            <option value="ITFC">ITFC</option>
+                                            <option value="IRMHS">IRMHS</option>
+                                            <option value="IRTS">IRTS</option>
+                                            <option value="RCH">RCH</option>
+                                            <option value="MHC">MHC</option>
+                                            <option value="ADT">ADT</option>
+                                            <option value="PHP">PHP</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="submit" class="my-btn btn-submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="row">
+                                <div class="col-12 mt-5">
+                                    <h3>Policies</h3>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <table class="table borderless policies">
+                                        <tbody>
+                                            {{#each policy}}
+                                            <tr>
+                                                <td>
+                                                    <a type="button" href="javascript:viewStatues()" id="policy_{{this.Policy_Id}}" 
+                                                     class="h6 btn_policy">
+                                                    {{this.Progress_Note}}
+                                                    </a>
+
+                                                    <a class="download_link"
+                                                        href="javascript:DownloadFile()"
+                                                        id="download_{{this.Policy_Id}}">
+                                                        <i class="bi bi-box-arrow-down"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            {{/each}}
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-5">
+                            <div class="row mt-4">
+                                <div class="col-12 ml-5 mt-5">
+                                    <h3>Relate Statutes</h3>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 ml-5">
+
+                                    {{#each data}}
+                                    <div id="accordion">
+                                        <div class="card">
+                                            {{#each statues}}
+                                            <div class="card-header" id="headingOne">
+                                                <h5 style="margin-top: 0; padding-top: 0;">
+                                                    <a class="btn accordion-btn" data-toggle="collapse"
+                                                        data-target="#collapseOne_{{this.Id}}" aria-expanded="true"
+                                                        aria-controls="collapseOne_{{this.Id}}">
+                                                        {{this.name}}
+                                                    </a>
+                                                </h5>
+                                            </div>
+
+                                            <div id="collapseOne_{{this.Id}}" class="collapse show"
+                                                aria-labelledby="headingOne" data-parent="#accordion"
+                                                style="border:0 !important;">
+                                                <div class="card-body" style="padding: 0; border: 0;">
+                                                    <table class="table table-bordered accordion-table ">
+                                                        {{#each divisions}}
+                                                        <tr>
+                                                            <td>{{this.division}}</td>
+                                                        </tr>
+                                                        {{/each}}
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            {{/each}}
+                                        </div>
+                                    </div>
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row mt-5 mb-5">
+                                <div class="col-6 text-end">
+                                    <a href="javascript:ViewPdf()" role="button" class="my-btn download_btn">View PDF
+                                    </a>
+                                </div>
+
+                                <div class="col-6">
+                                    <a href="javascript:DownloadPdf()" role="button"
+                                        class="my-btn download_btn">Download PDF </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>function showDrop() {
+            var x = document.getElementById("wel-drop");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }        
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+<script>
+
+
+    function viewStatues() {
+        var policy_id = document.activeElement.id;
+        let action = '/view_policy/' + window.btoa(policy_id.toString());
+        window.location.replace(action);
+    }
+
+    function DownloadFile() {
+        debugger
+        var policyId = document.activeElement.id;
+        let actions = '/view_policy/' + policyId.toString();
+        window.location.replace(actions);
+        return;
+    }
+
+    function DownloadPdf() {
+        var url = document.URL;
+        if (url == 'http://localhost:4700/view_policy') {
+            alert('Please Select Policy to Download File');
+        }
+        else {
+            var Id = url.replace("http://localhost:4700/view_policy", "")
+            let actions = '/downloadPdf' + Id.toString();
+            window.location.replace(actions);
+            return;
+        }
+    }
+
+    function ViewPdf() {
+        var url = document.URL;
+        if (url == 'http://localhost:4700/view_policy') {
+            alert('Please Select Policy to View File');
+        }
+        else {
+            var Id = url.replace("http://localhost:4700/view_policy", "")
+            let actions = '/viewPdf' + Id.toString();
+            window.location.replace(actions);
+            return;
+        }
+    }
+</script>
+
+</html>
